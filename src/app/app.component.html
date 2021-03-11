@@ -5,7 +5,7 @@
 
   <!-- Full Width Column -->
   <div class="content-wrapper">
-    <div class="container">
+    <div class="container" [@appAppeared]="appState">
 
       <router-outlet></router-outlet>      
 
@@ -13,13 +13,14 @@
   </div>
 
   <!-- snakbar deve ser aqui -->
+  <mt-snackbar></mt-snackbar>
 
   <footer class="main-footer">
     <div class="container">
       <div class="pull-right hidden-xs">
         <b>Version</b> 1.0.0
       </div>
-      <strong>AíFode</strong> Angular Application
+      <strong>Meat</strong> Angular Application
     </div>
   </footer>
 </div>
