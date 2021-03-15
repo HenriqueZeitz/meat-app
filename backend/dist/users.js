@@ -35,5 +35,6 @@ exports.User = User;
 exports.users = {
     "henrique.zeitz@operacionalsolution.com.br": new User('henrique.zeitz@operacionalsolution.com.br', 'Henrique Zeitz', 'Operacional1'),
     "douglas.rosemann@operacionalsolution.com.br": new User('douglas.rosemann@operacionalsolution.com.br', 'Douglas Rosemann', 'Operacional1'),
-    "gabriel.raimondi@operacionalsolution.com.br": new User('gabriel.raimondi@operacionalsolution.com.br', 'GR', 'Operacional1')
+    "gabriel.raimondi@operacionalsolution.com.br": new User('gabriel.raimondi@operacionalsolution.com.br', 'GR', 'Operacional1'),
+    "marilene@tainha.vinho": new User('marilene@tainha.vinho', 'Marilene', 'tainhavinho')
 };
