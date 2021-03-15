@@ -20,6 +20,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './security/login/login.component';
 import { UserDetailComponent } from './header/user-detail/user-detail.component';
 import { ApplicationErrorHandler } from './app.error-handler';
+import locatePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(locatePt, 'pt')
 
 @NgModule({
   declarations: [
@@ -46,7 +50,7 @@ import { ApplicationErrorHandler } from './app.error-handler';
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
   providers: [
-    {provide: LOCALE_ID, useValue: 'pt-BR'},
+    {provide: LOCALE_ID, useValue: 'pt'},
     {provide: ErrorHandler, useClass: ApplicationErrorHandler}
   ],
   bootstrap: [AppComponent]
